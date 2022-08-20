@@ -13,7 +13,7 @@ jobs:
       - name: Set up JDK 17
         uses: actions/setup-java@v1
         with:
-          java-version: 1７
+          java-version: 17
       - name: Cache Maven archetypes
         uses: actions/cache@v1
         with:
