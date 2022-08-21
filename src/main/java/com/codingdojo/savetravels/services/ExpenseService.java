@@ -31,7 +31,7 @@ public class ExpenseService {
         }
     }
     
-    // Overloaded method to update expense with expense object
+    // Update an expense with expense object
     public Expense updateExpense(Expense e) {
         return expenseRepository.save(e);
     }

@@ -5,8 +5,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
 import java.util.List;
 import javax.validation.Valid;
 import org.springframework.stereotype.Controller;
@@ -60,7 +58,7 @@ public class ExpenseController {
         return "/edit.jsp";
     }
     
-    @RequestMapping(value="/edit/{id}", method=RequestMethod.PUT)
+    @PutMapping(value="/edit/{id}")
     public String update(@Valid @ModelAttribute("expense") Expense expense, BindingResult result) {
         if (result.hasErrors()) {
             return "edit.jsp";
