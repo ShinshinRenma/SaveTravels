@@ -73,8 +73,8 @@
             			<pricingTier>B1</pricingTier>
             			<runtime>
               				<os>linux</os>
-              				<javaVersion>java11</javaVersion>
-              				<webContainer>java11</webContainer>
+              				<javaVersion>java17</javaVersion>
+              				<webContainer>java17</webContainer>
             			</runtime>			
             			<deployment>
               				<resources>
